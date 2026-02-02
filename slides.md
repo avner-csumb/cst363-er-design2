@@ -15,8 +15,6 @@ drawings:
   persist: false
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-# duration of the presentation
-duration: 35min
 ---
 
 # ER Modeling — Constraints
@@ -153,9 +151,7 @@ Example: takes  relationship set
 <div class="p-5">
 
 
-- Only two cases:
-  - total
-  - partial
+- Only two cases: *total* or *partial*
 - Remember, this is a constraint 
   - prescriptive, not descriptive
 
@@ -212,8 +208,7 @@ What are participation constraints in our music library example?
 - primary keys of the entity sets:
   - instructor: `inst_ID`
   - student: `student_ID`
-- So a superkey for the ‘advises’ is:
-  - `inst_ID, student_ID`
+- So a superkey for ‘advises’ is: `inst_ID, student_ID`
 
 
 <img src="/images/table1.png" class="w-50" />
@@ -343,6 +338,9 @@ instructor(ID, name, dept_name, salary)
 department(dept_name, building, budget)
 ```
 
+<br>
+
+
 - We might decide to add relationship set  inst_dept between instructor and department.
 - Then the dept_name attribute of instructor becomes redundant.
 - It should be removed from instructor – it is the key of department.
@@ -399,8 +397,11 @@ Instead of duplicating artist details in each Song, use a join table (e.g., Song
 - Identify primary keys of relationship sets
 
 
-This is not a rule  
-(it’s more of a guideline…)
+<br>
+
+
+> This is not a rule  <br>
+(it’s more of a guideline…) <br>
 Try it and see if it’s helpful
 
 
